@@ -1,0 +1,20 @@
+name: Docker Build
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  docker:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Build Backend Docker Image
+        run: |
+          docker build -t nexusai-backend ./backend
