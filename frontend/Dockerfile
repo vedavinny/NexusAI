@@ -12,6 +12,8 @@ RUN npm install
 COPY . .
 
 # Build the React app
+ARG VITE_API_BASE_URL
+ENV VITE_API_BASE_URL=$VITE_API_BASE_URL
 RUN npm run build
 
 # Install a lightweight static server
