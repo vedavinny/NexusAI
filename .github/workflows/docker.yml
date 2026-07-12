@@ -17,4 +17,4 @@ jobs:
 
       - name: Build Backend Docker Image
         run: |
-          docker build -t nexusai-backend ./backend
+          docker build -f backend/Dockerfile -t nexusai-backend .
