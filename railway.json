@@ -1,0 +1,9 @@
+{
+  "$schema": "https://railway.app/schema.json",
+  "build": {
+    "builder": "DOCKERFILE",
+    "buildArgs": {
+      "VITE_API_BASE_URL": "$VITE_API_BASE_URL"
+    }
+  }
+}
