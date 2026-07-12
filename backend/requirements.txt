@@ -17,7 +17,7 @@ redis==5.1.1
 langchain==0.3.4
 langchain-community==0.3.3
 langchain-groq==0.2.0
-sentence-transformers==3.2.0
+fastembed==0.4.2
 qdrant-client==1.11.3
 pypdf==5.0.1
 langchain-text-splitters==0.3.0
